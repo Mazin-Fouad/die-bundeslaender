@@ -1,0 +1,55 @@
+/* Start global rules */
+body {
+  margin: 5px;
+  font-family: 'Lato', sans-serif;
+}
+/* End global rules */
+
+/* Start styling Bundesland Box */
+.land-box {
+  text-decoration: none;
+  display: block;
+  border: 5px solid #eeeeee;
+  color: #434857;
+  padding: 10px;
+  width: calc(33% - 10px);
+  box-sizing: border-box;
+  margin: 5px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.land-box:hover {
+  border: 5px solid #899499;
+  transition: border 0.3s ease-in-out;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.land-box > div {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.land-box > span {
+  color: #acacac;
+}
+/* End styling Bundesland Box */
+
+/* Start Media Queries */
+@media(max-width: 800px){
+  .land-box {
+    width: calc(50% - 10px);
+  }
+}
+
+@media(max-width: 500px){
+  .land-box {
+    width: calc(100% - 10px);
+  }
+}
+
+/* End Media Queries */
