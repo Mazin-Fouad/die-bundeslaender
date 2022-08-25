@@ -5,6 +5,19 @@ body {
 }
 /* End global rules */
 
+/* Start styling Header Section */
+header {
+  background-color: #666666;
+  color: #eeeeee;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: calc(99% - 50px);
+  margin: 5px;
+}
+/* End styling Header Section */
+
 /* Start styling Bundesland Box */
 .land-box {
   text-decoration: none;
@@ -40,15 +53,23 @@ body {
 /* End styling Bundesland Box */
 
 /* Start Media Queries */
-@media(max-width: 800px){
+@media (max-width: 800px) {
   .land-box {
     width: calc(50% - 10px);
   }
+
+  header{
+    width: calc(99% - 45px);
+  }
 }
 
-@media(max-width: 500px){
+@media (max-width: 500px) {
   .land-box {
     width: calc(100% - 10px);
+  }
+
+  header{
+    width: calc(100% - 50px);
   }
 }
 

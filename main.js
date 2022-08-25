@@ -12,7 +12,7 @@ function render() {
   content.innerHTML = '';
   for (let i = 0; i < bundeslaender.length; i++) {
     const land = bundeslaender[i];
-    const population = (land.population + '').replace('.', ',');
+    const population = (land.population + '').replace('.', ','); //string connected, replace methode works only with string
 
     content.innerHTML += /*html*/ `
     <a class= "land-box" href="${land.url} " target="_blank"> 
