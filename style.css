@@ -7,11 +7,11 @@ body {
 
 /* Start styling Header Section */
 header {
-  background-color: #666666;
-  color: #eeeeee;
+  background-color: #cdcdcd;
+  color: #434857;
   padding: 20px;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 35px;
+  font-weight: bolder;
   text-transform: uppercase;
   width: calc(99% - 50px);
   margin: 5px;
@@ -52,13 +52,33 @@ header {
 }
 /* End styling Bundesland Box */
 
+/* Start Styling Letters Container */
+#letters_container {
+  display: flex;
+}
+
+.letter-box{
+  background-color: #dddddd;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+/* End Styling Letters Container */
+
 /* Start Media Queries */
 @media (max-width: 800px) {
   .land-box {
     width: calc(50% - 10px);
   }
 
-  header{
+  header {
     width: calc(99% - 45px);
   }
 }
@@ -68,7 +88,7 @@ header {
     width: calc(100% - 10px);
   }
 
-  header{
+  header {
     width: calc(100% - 50px);
   }
 }
