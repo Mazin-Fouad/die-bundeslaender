@@ -18,8 +18,6 @@ function render(filter) {
     if (!filter || filter == firstLetter) {
       content.innerHTML += createBoxLink(land, population);
     }
-
-    
     //console.log(firstLetter);
     if (!letters.includes(firstLetter)) {
       letters.push(firstLetter);
