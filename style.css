@@ -59,6 +59,7 @@ header {
 
 .letter-box{
   background-color: #dddddd;
+  color: #434857;
   margin: 5px;
   width: 30px;
   height: 30px;
@@ -68,8 +69,6 @@ header {
   cursor: pointer;
   font-weight: bold;
 }
-
-
 /* End Styling Letters Container */
 
 /* Start Media Queries */
