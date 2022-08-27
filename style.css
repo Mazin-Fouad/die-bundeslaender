@@ -3,12 +3,18 @@ body {
   margin: 5px;
   font-family: 'Lato', sans-serif;
 }
+
+:root {
+  --header-background: #cdcdcd;
+  --main-font-color: #434857;
+  --letter-background: #dddddd;
+}
 /* End global rules */
 
 /* Start styling Header Section */
 header {
-  background-color: #cdcdcd;
-  color: #434857;
+  background-color: var(--header-background);
+  color: var(--main-font-color) ;
   padding: 20px;
   font-size: 35px;
   font-weight: bolder;
@@ -23,7 +29,7 @@ header {
   text-decoration: none;
   display: block;
   border: 5px solid #eeeeee;
-  color: #434857;
+  color: var(--main-font-color);
   padding: 10px;
   width: calc(33% - 10px);
   box-sizing: border-box;
@@ -58,8 +64,8 @@ header {
 }
 
 .letter-box{
-  background-color: #dddddd;
-  color: #434857;
+  background-color: var(--letter-background);
+  color: var(--main-font-color);
   margin: 5px;
   width: 30px;
   height: 30px;
@@ -91,5 +97,4 @@ header {
     width: calc(100% - 50px);
   }
 }
-
 /* End Media Queries */
